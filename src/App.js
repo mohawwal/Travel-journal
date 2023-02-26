@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Body from './Body';
+import Footer from './Footer';
+import bodyData from './bodyData';
+
 
 function App() {
+  const places = bodyData.map(item => {
+    return(
+      <Body 
+        key = {item.id}
+        {...item}
+      />
+    )
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Footer />
+      <section className='place'>
+        {places}
+      </section>
     </div>
   );
 }

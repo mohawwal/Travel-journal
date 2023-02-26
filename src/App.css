@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+body {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(199, 200, 202);  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+    background-color: white;
+    width: 550px;
+    height: 704px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.place{
+    padding: 40px;
+    height: 168px;
+    margin: 0px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    background-color: #F55A5A;
+    width: 550px;
+    height: 55px;
+    padding: 0px;
+    color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.Globe-icon {
+    width: 24px;
+    height: 24px;
+    padding: 0px 5px;
+    color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pin-icon{
+    width: 7px;
+}
+.body-a {
+    display: flex;
+    align-items: center;
+}
+.body-b {
+    text-align: left;
+    margin-left: 20px;
+    padding: 0px;
+    margin: 20px;
+}
+.body-b >h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #2B283A;
+    margin: 0px;
+    padding: 0px;
+}
+.body-c {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+.body-c >h4, a {
+    padding: 0px 4px ;
+}
+.body-c >h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 12px;
+    letter-spacing: 0.17em;
+}
+.body-c > a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 12px;
+    text-decoration-line: underline;
+    color: #918E9B;
+}
+.body-d >h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10.24px;
+    line-height: 12px;
+    color: #2B283A;
+    margin: 0px;
+    padding-top: 15px;
+}
+.body-d > p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 150%;
+    margin: 0px;
+    padding-top: 6px;
 }
